@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+        <title>Pierre's Survey Project</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title">Pierre's Survey Form</h1>
+            <p id="description">Please take a few minutes to fill the survey and help us improve our services</p>
+        </div>
+        <div class="container form">
+            <form id="survey-form" method="post">
+                <fieldset class="personal" name="personal-info">
+                    <label for="name" id="name-label">Name<input id="name" type="text" required placeholder="Enter your full name"></label>
+                    <label for="email" id="email-label">Email<input id="email" type="email" required placeholder="Enter a valid email"></label>
+                    <label for="age" id="number-label">Age (optional)<input id="number" type="number" min="13" max="120" placeholder="Enter your age"></label>
+                    <label for="degree" id="degree-label">Choose your current degree
+                        <select id="dropdown">
+                            <option value="">Select a degree</option>
+                            <option value="1">Student</option>
+                            <option value="2">Bachelor's</option>
+                            <option value="3">Master's</option>
+                            <option value="4">Doctorate's</option>
+                            <option value="5">Other</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset class="survey" name="survey-info">
+                    <label class="question">Did you enjoy your experience with us?</label>
+                    <label class="experience-label"><input class="experience" type="radio" value="Definitely" name="experience"> Definitely</label>
+                    <label class="experienc-label"><input class="experience" type="radio" value="Maybe" name="experience"> Maybe</label>
+                    <label class="experience-label"><input class="experience" type="radio" value="Not Sure" name="experience"> Not Sure</label>
+                    <label class="question">What would you make better about this surey?</label>
+                    <label class="better-label"><input class="better" type="checkbox" value="color"> The Colors</label>
+                    <label class="better-label"><input class="better" type="checkbox" value="font"> The Fonts</label>
+                    <label class="better-label"><input class="better" type="checkbox" value="question"> The Questions</label>
+                    <label class="better-label"><input class="better" type="checkbox" value="everything"> Everything :/</label>
+                    <label class="question">If you have any extra feedback please let us know
+                        <textarea value="extra" rows="3" cols="30" placeholder="Enter any extra feedback you have here..."></textarea>
+                    </label>
+                </fieldset>
+                <fieldset class="submit" name="submit-button">
+                    <input type="submit" id="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

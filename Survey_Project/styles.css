@@ -1,0 +1,76 @@
+body{
+    background-color: #829cd0;
+    color: white;
+}
+ 
+.container{
+    max-width: 600px;
+    min-width: 400px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h1, p{
+    font-family: monospace;
+    margin: 5px;
+}
+
+p[id="description"]{
+    font-style: italic;
+}
+
+fieldset{
+    border: none;
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+}
+
+fieldset:last-of-type{
+    border: none;
+}
+
+input, select, textarea{
+    width: 100%;
+    
+}
+
+label{
+    display: block;
+    padding: 5px;
+}
+
+.form{
+    max-width: 800px;
+    min-width: 600px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #000b4f;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #000b4f;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.experience, .better{
+    width: 20px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #20368f;
+    border: none;
+    color: white;
+    min-width: 350px;
+  }
+
